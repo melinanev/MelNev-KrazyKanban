@@ -1,7 +1,7 @@
 services:
   - type: web
     name: krazy-kanban
-    env: node
+    env: postgres
     buildCommand: npm run build
     startCommand: npm start
     publish: ./client/dist
