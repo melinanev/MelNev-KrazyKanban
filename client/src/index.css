@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+
+
+body {
+  background: #F7A072;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 14px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #3a3b3c;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.filter-sort-controls input,
+.filter-sort-controls select {
+  background-color: #3a3b3c;
+  color: white;
+  border: 1px solid #666;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.filter-sort-controls input::placeholder {
+  color: #aaa;
+}
+
+main {
+  color: black;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+tr {
+  border-radius: 10px;
+  background-color: #000;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #333333;
+}
+
+/* Navbar Content */
+.nav {
+  display: block;
+  padding: 1em 2em;
+}
+
+.nav ul {
+  display: flex;
+  margin-left: auto;
+  flex-direction: row;
+}
+
+.nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.nav-title a {
+  color: #001A23;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  text-decoration: underline;
+
+}
+
+.nav-item {
+  display: block;
+  margin-left: auto;
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.table {
+  width: 80vw;
+  table-layout: fixed;
+}
+
+.board {
+  width: 100%;
+}
+
+.board-display {
+  display: flex;
+}
+
+.swim-lane {
+  text-align: center;
+  font-weight: 500;
+  width: 33%;
+  height: 90vh; 
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 14px;
+
+}
+
+.todo {
+  background-color: #B3EFB2;
+}
+
+.inprogress {
+  background-color: #7A9E7E;
+}
+
+.done {
+  background-color: #31493C;
+}
+
+.ticket-card {
+  text-align: left;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 0.1em solid black;
+}
+
+.container {
+  /* margin: auto; */
+  width: 100%;
+  /* height: 90%; */
+}
+
+#create-ticket-link {
+  display: block;
+  margin-left: auto;
+}
+
+
+.form {
+  border-radius: 14px;
+  width: 60%;
+  height: 80%;
+  background-color: #7A9E7E;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > h1, .form > label {
+  color: yellow;
+}
+
+.form > input {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+/* Make ticket description textarea bigger */
+#tDescription {
+  min-height: 120px;
+  width: 80%;
+  resize: vertical;
+}
+
+.error-message {
+  color: #ff3333;
+  background-color: #ffebeb;
+  border: 1px solid #ff3333;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form > label {
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+}
+
+form h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form button {
+  margin-top: 2.5%;
+}
+
+.form textarea {
+  resize: both;
+  min-height: 30px;
+  min-width: 30px;
+}
+
+.form input {
+  border-radius: 14px;
+}
+
+.editBtn {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: black;
+}
+
+.deleteBtn {
+  background-color: #f9f9f9;
+  font-weight: 500;
+  color: black;
+  text-decoration: inherit;
+}
+
+.deleteBtn:hover {
+  color: darkred;
+  background-color: #a56868;
+  border-color: darkred;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.login-notice {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.inactivity-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.inactivity-warning-content {
+  background-color: darkred;
+  border-radius: 14px;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+

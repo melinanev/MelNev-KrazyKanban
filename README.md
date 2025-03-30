@@ -66,4 +66,3 @@ GitHub: [https://github.com/melinanev/14-kanban](https://github.com/melinanev/14
 Email: melina.l.nevarez@gmail.com
 
 GitHub: [https://github.com/melinanev](https://github.com/melinanev)
-# MelNev-KrazyKanban
