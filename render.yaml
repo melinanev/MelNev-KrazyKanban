@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: krazy-kanban
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    plan: free
+    branch: main
+    autoDeploy: true
