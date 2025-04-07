@@ -41,12 +41,19 @@ To install necessary dependencies, run the following command:
 
 ```bash
 npm install 
+npm run build
+npm run seed
 ```
 
 ## Usage
-To use the Kanban board application, run the following command:
+To use the Kanban board application in dev mode, run the following command:
 
 ```bash
+npm run start:dev
+```
+To run the Kanban board in Render add the following command:
+
+```
 npm start
 ```
 
