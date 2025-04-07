@@ -61,8 +61,12 @@ No test currently available.  Placeholder included for future use if needed.
 
 ## Questions
 
-GitHub: [https://github.com/melinanev/14-kanban](https://github.com/melinanev/14-kanban)
+GitHub: [https://github.com/melinanev/14-kanban](https://github.com/melinanev/MelNev-KrazyKanban.git)
 
 Email: melina.l.nevarez@gmail.com
 
 GitHub: [https://github.com/melinanev](https://github.com/melinanev)
+
+Deployed Render site: https://melnev-krazykanban.onrender.com
+
+Use "LucyDog" as the Username and "password" as the Password. Session timeout starts at 30 seconds. 
