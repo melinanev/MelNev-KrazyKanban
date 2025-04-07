@@ -1,15 +1,41 @@
-import { createRoot } from 'react-dom/client'; // Added this import
-import App from './App';
-import Board from './pages/Board';
-import ErrorPage from './pages/ErrorPage';
-import EditTicket from './pages/EditTicket';
-import CreateTicket from './pages/CreateTicket';
-import Login from './pages/Login';
-import ProtectedRoute from './components/ProtectedRoute';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
 
-// Assuming you have a root element with id 'root' in your index.html
+import App from './App.tsx';
+import Board from './pages/Board.tsx';
+import ErrorPage from './pages/ErrorPage.tsx';
+import EditTicket from './pages/EditTicket.tsx';
+import CreateTicket from './pages/CreateTicket.tsx';
+import Login from './pages/Login.tsx';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <Board />
+      }, 
+      {
+        path: '/edit',
+        element: <EditTicket />
+      },
+      {
+        path: '/create',
+        element: <CreateTicket />
+      },
+      {
+        path: '/login',
+        element: <Login />
+      }
+    ]
+  }
+])
+
 const rootElement = document.getElementById('root');
 if (rootElement) {
-  const root = createRoot(rootElement);
-  root.render(<App />);
+  ReactDOM.createRoot(rootElement).render(<RouterProvider router={router} />);
 }

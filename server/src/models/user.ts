@@ -44,14 +44,14 @@ export function UserFactory(sequelize: Sequelize): typeof User {
     {
       tableName: 'users',
       sequelize,
-      hooks: {
-        beforeCreate: async (user: User) => {
-          await user.setPassword(user.password);
-        },
-        beforeUpdate: async (user: User) => {
-          await user.setPassword(user.password);
-        },
-      }
+      // hooks: {
+      //   beforeCreate: async (user: User) => {
+      //     await user.setPassword(user.password);
+      //   },
+      //   beforeUpdate: async (user: User) => {
+      //     await user.setPassword(user.password);
+      //   },
+      // }
     }
   );
 

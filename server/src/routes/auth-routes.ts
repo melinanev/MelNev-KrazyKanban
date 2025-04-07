@@ -13,7 +13,11 @@ export const login = async (req: Request, res: Response) => {
 
     const user = await User.findOne({ where: { username } });
 
-    if (!user || !(await bcrypt.compare(password, user.password))) {
+    console.log(user?.dataValues.password)
+    console.log(password)
+
+    // if (!user || !(await bcrypt.compare(password, user.password))) {
+    if (!user || password != user.dataValues.password) {
       return res.status(401).json({ message: 'Invalid username or password' });
     }
 
@@ -33,6 +37,6 @@ export const login = async (req: Request, res: Response) => {
 
 const router = Router();
 
-router.post('/login', (req: Request, res: Response) => login(req, res));
+router.post('/login', login);
 
 export default router;
